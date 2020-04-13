@@ -1,0 +1,470 @@
+yuvalarian@DESKTOP-R4HOOAS:~$ ssh -p922 ariany@labs.cs.wwu.edu
+The authenticity of host '[labs.cs.wwu.edu]:922 ([140.160.30.142]:922)' can't be established.
+ECDSA key fingerprint is SHA256:10slbdlUV8IpfFxO7iWnVUuHzh5F5BRknFd9AcbwdTo.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '[labs.cs.wwu.edu]:922,[140.160.30.142]:922' (ECDSA) to the list of known hosts.
+ariany@labs.cs.wwu.edu's password:
+Permission denied, please try again.
+ariany@labs.cs.wwu.edu's password:
+Warning: Permanently added the ECDSA host key for IP address '[140.160.137.225]:922' to the list of known hosts.
+ariany@cf420-32.cs.wwu.edu's password:
+Welcome to the WWU Computer Science lab environment
+
+If you are a new user or have questions regarding CS systems
+or software, please visit the following URL or contact
+CS.Support@wwu.edu for assistance:
+
+https://support.cs.wwu.edu/
+
+ariany@cf420-32:~$ mkdircsci241
+mkdircsci241: command not found
+ariany@cf420-32:~$ mkdir csci241
+ariany@cf420-32:~$ cd csci241
+ariany@cf420-32:~/csci241$ ls
+ariany@cf420-32:~/csci241$ git clone https://github.com/csci241-19w/lab-1-ariany
+Cloning into 'lab-1-ariany'...
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/csci241-19w/lab-1-ariany/'
+ariany@cf420-32:~/csci241$ git clone https://github.com/csci241-19w/lab-1-ariany
+Cloning into 'lab-1-ariany'...
+Username for 'https://github.com':
+Password for 'https://github.com':
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/csci241-19w/lab-1-ariany/'
+ariany@cf420-32:~/csci241$ git clone https://github.com/csci241-19w/lab-1-yuvalarian
+Cloning into 'lab-1-yuvalarian'...
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+remote: Repository not found.
+fatal: repository 'https://github.com/csci241-19w/lab-1-yuvalarian/' not found
+ariany@cf420-32:~/csci241$ git clone https://github.com/csci241-20s/lab-1-yuvalarian
+Cloning into 'lab-1-yuvalarian'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 14 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+ariany@cf420-32:~/csci241$ ls
+lab-1-yuvalarian
+ariany@cf420-32:~/csci241$ cd lab-1-yuvalarian
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ ls
+build.gradle  settings.gradle  src
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ git config --global yuvalarian "Yuval Arian"
+error: key does not contain a section: yuvalarian
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ git config --global user.name "Yuval Arian"
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ git config --global user.email ariany@wwu.edu
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ touch writeup.txt
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ ls
+build.gradle  settings.gradle  src  writeup.txt
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ git add writeup.txt
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ ls
+build.gradle  settings.gradle  src  writeup.txt
+ariany@cf420-32:~/csci241/lab-1-yuvalarian$ git commit 'm "Added empty writeup"
+>
+>
+> git commit -m "added empty writeup"
+> cd csci241
+> exit
+> git commit 'm "Added empty writeup"
+
+
+git commit -m "added empty writeup"
+cd csci241
+exit
+error: pathspec 'm "Added empty writeup"
+
+
+git commit -m "added empty writeup"
+cd csci241
+exit
+git commit m' did not match any file(s) known to git.
+error: pathspec 'Added empty writeup' did not match any file(s) known to git.
+[master f8fec88] added empty writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+-bash: cd: csci241: No such file or directory
+logout
+Connection to cf420-32.cs.wwu.edu closed.
+Connection to labs.cs.wwu.edu closed.
+yuvalarian@DESKTOP-R4HOOAS:~$ ssh -p922 ariany@labs.cs.wwu.edu
+ariany@labs.cs.wwu.edu's password:
+Warning: Permanently added the ECDSA host key for IP address '[140.160.137.67]:922' to the list of known hosts.
+ariany@cf167-01.cs.wwu.edu's password:
+Welcome to the WWU Computer Science lab environment
+
+If you are a new user or have questions regarding CS systems
+or software, please visit the following URL or contact
+CS.Support@wwu.edu for assistance:
+
+https://support.cs.wwu.edu/
+
+ariany@cf167-01:~$ cd csci241
+ariany@cf167-01:~/csci241$ cd lab-1-yuvalarian
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 268 bytes | 268.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   1a77fb5..f8fec88  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ sudo apt install xz-utils
+[sudo] password for ariany:
+ariany is not in the sudoers file.  This incident will be reported.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Added part 1 (names) to writeup"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   writeup.txt
+
+no changes added to commit
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Added part 1 (names) to writeup"
+[master 673d802] Added part 1 (names) to writeup
+ 1 file changed, 1 insertion(+)
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   f8fec88..673d802  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   writeup.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add wrietup.txt
+fatal: pathspec 'wrietup.txt' did not match any files
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Added part 2 to writeup"
+[master 70557c9] Added part 2 to writeup
+ 1 file changed, 1 insertion(+)
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   673d802..70557c9  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ touch username.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ ls
+build.gradle  settings.gradle  src  username.txt  writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano username.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add username.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Adding username"
+[master dae6017] Adding username
+ 1 file changed, 1 insertion(+)
+ create mode 100644 username.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   70557c9..dae6017  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout -b "question3"
+Switched to a new branch 'question3'
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout master
+M       writeup.txt
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout question3
+M       writeup.txt
+Switched to branch 'question3'
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout master
+M       writeup.txt
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git merge question3
+Already up to date.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout question3
+M       writeup.txt
+Switched to branch 'question3'
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Added question 3 to writeup"
+[question3 f2bc603] Added question 3 to writeup
+ 1 file changed, 1 insertion(+)
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+fatal: The current branch question3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin question3
+
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git merge question3
+Updating dae6017..f2bc603
+Fast-forward
+ writeup.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 172.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   dae6017..f2bc603  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git branch -d question3
+Deleted branch question3 (was f2bc603).
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle build
+
+Welcome to Gradle 6.1!
+
+Here are the highlights of this release:
+ - Dependency cache is relocatable
+ - Configurable compilation order between Groovy, Java & Scala
+ - New sample projects in Gradle's documentation
+
+For more details see https://docs.gradle.org/6.1/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+BUILD SUCCESSFUL in 9s
+5 actionable tasks: 5 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run
+
+> Task :run
+Hello, world!
+
+BUILD SUCCESSFUL in 500ms
+2 actionable tasks: 1 executed, 1 up-to-date
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ ls
+build  build.gradle  gradle  settings.gradle  src  username.txt  writeup.txt
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ fg
+
+> Task :compileJava FAILEDlab-1-yuvalarian$ gradle run
+/home/ariany/csci241/lab-1-yuvalarian/src/main/java/lab1/Hello.java:5: error: ')' expected
+    System.out.println("Hello, " args);
+                                ^
+/home/ariany/csci241/lab-1-yuvalarian/src/main/java/lab1/Hello.java:5: error: not a statement
+    System.out.println("Hello, " args);
+                                 ^
+/home/ariany/csci241/lab-1-yuvalarian/src/main/java/lab1/Hello.java:5: error: ';' expected
+    System.out.println("Hello, " args);
+                                     ^
+3 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 512ms
+1 actionable task: 1 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ fg
+-bash: fg: current: no such job
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ fg
+nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle rn
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Task 'rn' not found in root project 'lab1'. Some candidates are: 'run'.
+
+* Try:
+Run gradle tasks to get a list of available tasks. Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 387ms
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run
+
+> Task :run
+Hello, [Ljava.lang.String;@4dc63996
+BUILD SUCCESSFUL in 519ms
+2 actionable tasks: 2 executed
+
+> Task :run
+Hello, [Ljava.lang.String;@4dc63996
+BUILD SUCCESSFUL in 434ms
+2 actionable tasks: 1 executed, 1 up-to-date
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run --args="241"
+
+> Task :run
+Hello, [Ljava.lang.String;@4dc63996
+BUILD SUCCESSFUL in 448ms
+2 actionable tasks: 1 executed, 1 up-to-date
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run --args="241"
+
+> Task :compileJava FAILED
+/home/ariany/csci241/lab-1-yuvalarian/src/main/java/lab1/Hello.java:6: error: cannot find symbol
+System.out.print args;
+      ^
+  symbol:   class out
+  location: class System
+/home/ariany/csci241/lab-1-yuvalarian/src/main/java/lab1/Hello.java:6: error: variable args is already defined in method main(String[])
+System.out.print args;
+                 ^
+2 errors
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 458ms
+1 actionable task: 1 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run --args="241"
+
+> Task :run
+Hello, [Ljava.lang.String;@24d46ca6
+BUILD SUCCESSFUL in 553ms
+2 actionable tasks: 2 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run --args="241"
+
+> Task :run
+Hello, 241
+BUILD SUCCESSFUL in 501ms
+2 actionable tasks: 2 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ nano src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ gradle run --args="241"
+
+> Task :run
+Hello, 241!
+BUILD SUCCESSFUL in 534ms
+2 actionable tasks: 2 executed
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git add src/main/java/lab1/Hello.java
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git commit -m "Hello now prints command line arg"
+[master e32254c] Hello now prints command line arg
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$ git push
+Username for 'https://github.com': yuvalarian
+Password for 'https://yuvalarian@github.com':
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (7/7), 556 bytes | 139.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/csci241-20s/lab-1-yuvalarian
+   f2bc603..e32254c  master -> master
+ariany@cf167-01:~/csci241/lab-1-yuvalarian$
